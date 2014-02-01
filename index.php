@@ -66,11 +66,10 @@
         <br />
         <div class="wrap">
         	<a class="link" href="/red/index.php"><img class="lpic" src="_pgdat/ehp.png" alt="eHomePage" /></a>
+        	<a class="link" href="https://github.com/eNnillaMS"><img class="lpic" src="_pgdat/github.png" alt="Me on GitHub" /></a>
+        	<!--<a class="link" href="http://dev.bukkit.org/bukkit-plugins/MineSkills"><img class="lpic" src="_pgdat/MineSkills.png" alt="Project MineSkills" /></a>-->
         	<a class="link" href="http://dev.bukkit.org/bukkit-plugins/MineJobs"><img class="lpic" src="_pgdat/MineJobs.png" alt="Project MineJobs" /></a>
-        	<a class="link" href="/sb/index.php"><img class="lpic" src="_pgdat/sbtemp.png" alt="SpaceCP" /></a>
-        	<a class="link" href="/owncloud/index.php"><img class="lpic" src="_pgdat/owncloud.png" alt="OwnCloud" /></a>
-        	<a class="link" href="/phpma"><img class="lpic" src="_pgdat/phpma.png" alt="PHPMyAdmin" /></a>
-        	<a class="link" href="/red/codes.php"><img class="lpic" src="_pgdat/lock.png" alt="Server Access Codes" /></a>
+        	<a class="link" href="/space/index.php"><img class="lpic" src="_pgdat/sbtemp.png" alt="SpaceCP" /></a>
 		</div>
     </body>
 </html>
