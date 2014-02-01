@@ -17,13 +17,13 @@
 	}
 	
 	ob_start();
-	require "_pgdat/header.php";
+	require "pgdat/header.php";
 	$header = ob_get_clean();
 	echo preg_replace("{THISISTHEPAGETITLE}", "Logout - eHP", $header);
 	
 	echo '  <div id="Column">';
 	//Column parts in here -=-=-=     require "col_PART.php";
-	require "_pgdat/col_login.php";
+	require "pgdat/col_login.php";
 	echo '  </div>';
     
 	if(isset($_POST['submit'])){
@@ -67,6 +67,6 @@
 				</div>';
 	}
 	
-	require "_pgdat/footer.php";
+	require "pgdat/footer.php";
     mysqli_close($link);
 ?>

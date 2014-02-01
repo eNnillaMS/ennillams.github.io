@@ -3,13 +3,13 @@
 	$link = mysqli_connect("localhost", "root", "Hz88329857", "Web_Main", "3306");
 	
 	ob_start();
-	require "_pgdat/header.php";
+	require "pgdat/header.php";
 	$header = ob_get_clean();
 	echo preg_replace("{THISISTHEPAGETITLE}", "Page_Title", $header);
 	
 	echo '  <div id="Column">';
 	//Column parts in here -=-=-=     require "col_PART.php";
-	require "_pgdat/col_login.php";
+	require "pgdat/col_login.php";
 	echo '  </div>';
     
 	echo '	<div id="Body">
@@ -30,6 +30,6 @@
 				</div>
 			</div>';
 	
-	require "_pgdat/footer.php";
+	require "pgdat/footer.php";
     mysqli_close($link);
 ?>

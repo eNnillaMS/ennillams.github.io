@@ -3,18 +3,18 @@
 	$link = mysqli_connect("localhost", "root", "Hz88329857", "Web_Main", "3306");
 	
 	ob_start();
-	require "_pgdat/header.php";
+	require "pgdat/header.php";
 	$header = ob_get_clean();
 	echo preg_replace("{THISISTHEPAGETITLE}", "eNnilla's Homepage", $header);
 	
 	echo '  <div id="Column">';
 	//Column parts in here -=-=-=     require "col_PART.php";
-	require "_pgdat/col_login.php";
+	require "pgdat/col_login.php";
 	echo '  </div>';
     
 	echo '	<div id="Body">';
 	$query = mysqli_query($link, "SELECT * FROM newsFeed ORDER BY id DESC");
-	require_once "_pgdat/parser.php";
+	require_once "pgdat/parser.php";
 	$parser = new parser;
 	while ($row = mysqli_fetch_assoc($query)){
 		echo '
@@ -38,7 +38,7 @@
 				
 	echo '  </div>';
 	
-	require "_pgdat/footer.php";
+	require "pgdat/footer.php";
 	mysqli_close($link);
 	/* To-Do and Notes:
 		- Test news posting system AFTER making the parser and the login / register / logout system

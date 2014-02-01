@@ -2,22 +2,22 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-        <link href="../_pgdat/favicon.ico" type="" rel="shortcut icon" />
-        <link rel="stylesheet" href="_pgdat/scrollNav.css" type="text/css" />
+        <link href="../pgdat/favicon.ico" type="" rel="shortcut icon" />
+        <link rel="stylesheet" href="pgdat/scrollNav.css" type="text/css" />
         <?php
 			date_default_timezone_set('America/Vancouver');
 			if (date('G') >= 21 || date('G') < 3){
-				echo '<link rel="stylesheet" href="_pgdat/Night/Night.css" type="text/css" />';
+				echo '<link rel="stylesheet" href="pgdat/Night/Night.css" type="text/css" />';
 			} else if (date('G') >= 3 && date('G') < 9){
-				echo '<link rel="stylesheet" href="_pgdat/Morning/Morning.css" type="text/css" />';
+				echo '<link rel="stylesheet" href="pgdat/Morning/Morning.css" type="text/css" />';
 			} else if (date('G') >= 9 && date('G') < 15){
-				echo '<link rel="stylesheet" href="_pgdat/Day/Day.css" type="text/css" />';
+				echo '<link rel="stylesheet" href="pgdat/Day/Day.css" type="text/css" />';
 			} else if (date('G') >= 15 && date('G') < 21){
-				echo '<link rel="stylesheet" href="_pgdat/Dusk/Dusk.css" type="text/css" />';
+				echo '<link rel="stylesheet" href="pgdat/Dusk/Dusk.css" type="text/css" />';
 			}
 		?>
         <title>THISISTHEPAGETITLE</title>
-        <script src="_pgdat/mobile-detect.js" type="text/javascript"></script>
+        <script src="pgdat/mobile-detect.js" type="text/javascript"></script>
         <script src="Scripts/swfobject_modified.js" type="text/javascript"></script>
         <script type="text/javascript">
 			function posY(elm) {
@@ -64,7 +64,7 @@
         		<div class="i2">
                 	<a href="index.php">
                          <object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" width="100%" height="100%" id="FlashID" title="Header">
-                            <param name="movie" value="_pgdat/Header.swf" />
+                            <param name="movie" value="pgdat/Header.swf" />
                             <param name="quality" value="high" />
                             <param name="wmode" value="opaque" />
                             <param name="swfversion" value="9.0.115.0" />
@@ -73,7 +73,7 @@
                             <param name="expressinstall" value="Scripts/expressInstall.swf" />
                             <!-- Next object tag is for non-IE browsers. So hide it from IE using IECC. -->
                             <!--[if !IE]>-->
-                            <object type="application/x-shockwave-flash" data="_pgdat/Header.swf" width="100%" height="100%">
+                            <object type="application/x-shockwave-flash" data="pgdat/Header.swf" width="100%" height="100%">
                             <!--<![endif]-->
                                 <param name="quality" value="high" />
                                 <param name="wmode" value="opaque" />
@@ -82,7 +82,7 @@
                                 <param name="expressinstall" value="Scripts/expressInstall.swf" />
                                 <!-- The browser displays the following alternative content for users with Flash Player 6.0 and older. -->
                                 <div>
-                                    <img src="_pgdat/Header.gif" alt="HeaderGif" height="100%" width="100%" />
+                                    <img src="pgdat/Header.gif" alt="HeaderGif" height="100%" width="100%" />
                                 </div>
                             <!--[if !IE]>-->
                             </object>
@@ -95,9 +95,9 @@
             		<a href="index.php">Home</a>
             		<a href="journal.php">Journal</a>
             		<a href="projects.php">Projects</a>
-            		<a href="http://www.youtube.com/user/eNnillaGotBored" style="float:right"><img src="_pgdat/youtube.png" /></a>
-            		<a href="https://twitter.com/King_eNnilla" style="float:right"><img src="_pgdat/twitter.png" /></a>
-            		<a href="https://www.facebook.com/AnonyD3RP612" style="float:right"><img src="_pgdat/facebook.png" /></a>
+            		<a href="http://www.youtube.com/user/eNnillaGotBored" style="float:right"><img src="pgdat/youtube.png" /></a>
+            		<a href="https://twitter.com/King_eNnilla" style="float:right"><img src="pgdat/twitter.png" /></a>
+            		<a href="https://www.facebook.com/AnonyD3RP612" style="float:right"><img src="pgdat/facebook.png" /></a>
             		<a href="http://dev.bukkit.org/profiles/eNnillaMS/bukkit-plugins/" style="float:right">BukkitDev</a>
             		<a href="../index.php" style="float:right">Main Portal</a>
             	</div>

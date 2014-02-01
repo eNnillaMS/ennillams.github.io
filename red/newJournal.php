@@ -8,7 +8,7 @@
 	$success = false;
 	if (isset($_POST['submit'])){
 		if (isset($_SESSION['loggedIn']) && $_SESSION['loggedIn'] == 1 && $_SESSION['userPrivs'] >= 2){
-			require_once "_pgdat/parser.php";
+			require_once "pgdat/parser.php";
 			$parser = new parser;
 			date_default_timezone_set('America/Vancouver');
 			$title = $_POST['title'];
@@ -28,13 +28,13 @@
 	}
 
 	ob_start();
-	require "_pgdat/header.php";
+	require "pgdat/header.php";
 	$header = ob_get_clean();
 	echo preg_replace("{THISISTHEPAGETITLE}", "New Journal Entry - eHP", $header);
 	
 	echo '  <div id="Column">';
 	//Column parts in here -=-=-=     require "col_PART.php";
-	require "_pgdat/col_login.php";
+	require "pgdat/col_login.php";
 	echo '  </div>';
 	
 	echo '	<div id="Body">';
@@ -104,6 +104,6 @@
 	}
 	echo '  </div>';
 	
-	require "_pgdat/footer.php";
+	require "pgdat/footer.php";
     mysqli_close($link);
 ?>

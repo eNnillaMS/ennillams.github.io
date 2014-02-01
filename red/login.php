@@ -6,7 +6,7 @@
 		$FAIL = "";
 		$success = false;
 		if (!empty($_POST['username']) && !empty($_POST['password'])){
-			require_once "_pgdat/parser.php";
+			require_once "pgdat/parser.php";
 			$parser = new parser;
 			$username = mysqli_real_escape_string($link, $parser->p($_POST['username'], 1));
 			$query = mysqli_query($link, "SELECT * FROM usersList WHERE username='$username'");
@@ -25,13 +25,13 @@
 	}
 	
 	ob_start();
-	require "_pgdat/header.php";
+	require "pgdat/header.php";
 	$header = ob_get_clean();
 	echo preg_replace("{THISISTHEPAGETITLE}", "Login - eHP", $header);
 	
 	echo '  <div id="Column">';
 	//Column parts in here -=-=-=     require "col_PART.php";
-	require "_pgdat/col_login.php";
+	require "pgdat/col_login.php";
 	echo '  </div>';
     
 	if ($success == true){
@@ -64,6 +64,6 @@
 		</div>';
 	}
 		
-	require "_pgdat/footer.php";
+	require "pgdat/footer.php";
     mysqli_close($link);
 ?>

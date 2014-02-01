@@ -10,7 +10,7 @@
 	$success = false;
 	if (isset($_POST['submit'])){
 		if (!isset($_SESSION['loggedIn'])){
-			require_once "_pgdat/parser.php";
+			require_once "pgdat/parser.php";
 			$parser = new parser;
 			$username = mysqli_real_escape_string($link, $parser->p($_POST['username'], 1));
 			if (!empty($username)){
@@ -41,13 +41,13 @@
 	}
 	
 	ob_start();
-	require "_pgdat/header.php";
+	require "pgdat/header.php";
 	$header = ob_get_clean();
 	echo preg_replace("{THISISTHEPAGETITLE}", "Register - eHP", $header);
 	
 	echo '  <div id="Column">';
 	//Column parts in here -=-=-=     require "col_PART.php";
-	require "_pgdat/col_login.php";
+	require "pgdat/col_login.php";
 	echo '  </div>';
     
 	if ($success == true){
@@ -99,6 +99,6 @@
 				</div>';
 	}
 	
-	require "_pgdat/footer.php";
+	require "pgdat/footer.php";
     mysqli_close($link);
 ?>
