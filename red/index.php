@@ -1,6 +1,6 @@
 <?php
 	session_start();
-	$link = mysqli_connect("localhost", "root", "Hz88329857", "Web_Main", "3306");
+	$link = mysqli_connect("localhost", "root", "", "Web_Main", "3306");
 	
 	ob_start();
 	require "pgdat/header.php";
