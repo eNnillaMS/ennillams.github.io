@@ -1,0 +1,35 @@
+<?php
+	session_start();
+	$link = mysqli_connect("localhost", "root", "Hz88329857", "Web_Main", "3306");
+	
+	ob_start();
+	require "_pgdat/header.php";
+	$header = ob_get_clean();
+	echo preg_replace("{THISISTHEPAGETITLE}", "Page_Title", $header);
+	
+	echo '  <div id="Column">';
+	//Column parts in here -=-=-=     require "col_PART.php";
+	require "_pgdat/col_login.php";
+	echo '  </div>';
+    
+	echo '	<div id="Body">
+				<div class="article">
+					<div class="artTop"><br /></div>
+					<div class="art">
+						Test Title and Message
+						<div class="bTop"><br /></div>
+						<div class="bMain">
+							Hallo Wurlt. Mien naem ist Heath. And I really need to stop making fun of german accents because Google translate thinks it\'s real german.
+						</div>
+						<div class="bBot"><br /></div>
+						<div class="artFoot">
+							Created by eNnilla at 12:00:00am on January 1, 2014.
+						</div>
+					</div>
+					<div class="artBot"><br /></div>
+				</div>
+			</div>';
+	
+	require "_pgdat/footer.php";
+    mysqli_close($link);
+?>

@@ -1,0 +1,39 @@
+#ScrollNav {
+	width: 90%;
+	height: auto;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	right: 0px;
+	margin-left: 5%;
+	margin-right: 5%;
+}
+#ScrollNav table {
+	border: 0;
+	border-spacing: 0px;
+	padding: 0 0 0 0;
+	width: 100%;
+}
+#ScrollNav .main {
+	width: 100%;
+	height: 64px;
+	padding: 0;
+	font-family: Impact, Haettenschweiler, "Franklin Gothic Bold", "Arial Black", sans-serif;
+	font-size: 30px;
+	color: #000;
+}
+#ScrollNav .bg1 {
+	height: 64px;
+	width: 64px;
+	padding: 0;
+}
+#ScrollNav .bg2 {
+	height: 64px;
+	width: 64px;
+	padding: 0;
+}
+#ScrollNav a {margin: 0 10px;}
+#ScrollNav a:link {text-decoration: none; color: #000;}
+#ScrollNav a:visited {text-decoration: none; color: #161616;}
+#ScrollNav a:active {text-decoration: none; color: #FFF;}
+#ScrollNav a:hover {text-decoration: none; color: #A70000;}

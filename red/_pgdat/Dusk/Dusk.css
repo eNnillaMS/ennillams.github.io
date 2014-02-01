@@ -1,0 +1,219 @@
+html {
+	background-image: url("bg.jpg");
+	background-position: center center;
+	background-color: #000;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	color: #000;
+}
+
+#Header {
+	width: 90%;
+	height: auto;
+	margin: 0 5% 25px;
+}
+
+#Header .o1 {
+	background-image: url("body01.png");
+	background-size: 100% 100%;
+	padding: 24px 0 0;
+}
+
+#Header .o2 {
+	background-image: url("body02.png");
+	background-size: 100% 100%;
+	padding: 0 16px;
+}
+
+#Header .o3 {
+	background-image: url("body03.png");
+	background-size: 100% 100%;
+	padding: 24px 0 0;
+}
+
+#Header .o2 .i1 {
+	background-image: url("body11.png");
+	background-size: 100% 100%;
+	padding: 16px 0 0;
+}
+
+#Header .o2 .i2 {
+	background-image: url("body12.png");
+	background-size: 100% 100%;
+	padding: 0 16px;
+}
+
+#Header .o2 .i3 {
+	background-image: url("body13.png");
+	background-size: 100% 100%;
+	padding: 16px 0 0;
+}
+
+#Header .o2 .directory {
+	margin: 16px 16px 0;
+	font-family: Impact, Haettenschweiler, "Franklin Gothic Bold", "Arial Black", sans-serif;
+	font-size: 30px;
+	color: #000;
+}
+#Header .o2 .directory a {margin: 0 10px;}
+#Header .o2 .directory a:link {text-decoration: none; color: #000;}
+#Header .o2 .directory a:visited {text-decoration: none; color: #161616;}
+#Header .o2 .directory a:active {text-decoration: none; color: #FFF;}
+#Header .o2 .directory a:hover {text-decoration: none; color: #A70000;}
+
+#Column {
+	width: 12.5%;
+	margin: 0 0 25px 5%;
+	float: left;
+}
+
+#Column .object {
+	margin: 0 0 25px;
+}
+
+#Column .object .objTop {
+	background-image: url("body01.png");
+	background-size: 100% 100%;
+	font-size: 5px;
+}
+
+#Column .object .obj {
+	background-image: url("body02.png");
+	background-size: 100% 100%;
+	font-size: 24px;
+	font-family: Impact, Haettenschweiler, "Franklin Gothic Bold", "Arial Black", sans-serif;
+	text-align: center;
+	color: #FF0;
+	padding: 0 3%;
+}
+
+#Column .object .objBot {
+	background-image: url("body03.png");
+	background-size: 100% 100%;
+	font-size: 5px;
+}
+
+#Column .object .obj .inTop {
+	background-image: url("body11.png");
+	background-size: 100% 100%;
+	padding: 0 5%;
+	font-size: 5px;
+}
+
+#Column .object .obj .inMain {
+	background-image: url("body12.png");
+	background-size: 100% 100%;
+	font-size: 12px;
+	font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", serif;
+	text-align: left;
+	color: #000;
+	padding: 0 5%;
+}
+
+#Column .object .obj .inBot {
+	background-image: url("body13.png");
+	background-size: 100% 100%;
+	padding: 0 5%;
+	font-size: 5px;
+}
+
+#Column .object .obj .objFoot {
+	font-size: 9px;
+	font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", serif;
+	text-align: right;
+	color: #FFF;
+	padding: 0 2.5%;
+}
+
+#Body {
+	width: 75%;
+	margin: 0 5% 25px 2.5%;
+	float: right;
+}
+
+#Body .article {
+	margin: 0 0 25px;
+}
+
+#Body .article .artTop {
+	background-image: url("body01.png");
+	background-size: 100% 100%;
+	font-size: 9px;
+}
+
+#Body .article .art {
+	background-image: url("body02.png");
+	background-size: 100% 100%;
+	font-size: 36px;
+	font-family: Impact, Haettenschweiler, "Franklin Gothic Bold", "Arial Black", sans-serif;
+	text-align: center;
+	color: #FF0;
+	padding: 0 1.5%;
+}
+
+#Body .article .artBot {
+	background-image: url("body03.png");
+	background-size: 100% 100%;
+	font-size: 11px;
+}
+
+#Body .article .art .bTop {
+	background-image: url("body11.png");
+	background-size: 100% 100%;
+	padding: 0 5%;
+	font-size: 14px;
+}
+
+#Body .article .art .bMain {
+	background-image: url("body12.png");
+	background-size: 100% 100%;
+	font-size: 14px;
+	font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", serif;
+	text-align: left;
+	color: #000;
+	padding: 0 2.5%;
+}
+
+#Body .article .art .bBot {
+	background-image: url("body13.png");
+	background-size: 100% 100%;
+	padding: 0 5%;
+	font-size: 14px;
+}
+
+#Body .article .art .artFoot {
+	font-size: 11px;
+	font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", serif;
+	text-align: right;
+	color: #FFF;
+	padding: 0 2.5%;
+}
+
+#Footer {
+	clear: both;
+	width: 75%;
+	margin: 0 12.5%;
+}
+
+#Footer .top {
+	font-size: 7px;
+	background-image: url("body01.png");
+	background-size: 100% 100%;
+}
+
+#Footer .main {
+	background-image: url("body02.png");
+	background-size: 100% 100%;
+	text-align: center;
+	padding: 2px;
+}
+
+#Footer .bot {
+	font-size: 7px;
+	background-image: url("body03.png");
+	background-size: 100% 100%;
+}
+
+textarea {
+	width: 100%;
+}
