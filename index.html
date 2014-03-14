@@ -2,17 +2,43 @@
 <html xmlns='http://www.w3.org/1999/xhtml'>
 	<head>
 		<meta http-equiv='Content-Type' content='text/html; charset=utf-8' />
-        <link href='favicon.ico' type='' rel='shortcut icon' />
-		<title>Redirecting...</title>
-        <script language='javascript'>
-			window.location='http://rednetz.no-ip.biz/'
-		</script>
+        <link href='_pgdat/favicon.ico' type='' rel='shortcut icon' />
+		<title>RedNet Home Portal</title>
+        <link href='_themes/core.css' type='text/css' rel='stylesheet' />
+        <link id='_theme' type='text/css' rel='stylesheet' />
+        <script src='_script/ToDThemes.js' type='text/javascript'></script>
+        <script src='_script/Tooltip.js' type='text/javascript'></script>
 	</head>
-	<body style='background-color:#FBB'>
-		<img src='image.png' style='margin: 0 37.5%; width: 25%; height: auto;' />
-		<div style='margin:16px 12.5%; text-align:center;'>
-   			<h1 style='color:#33F;font-family:Impact, Haettenschweiler, 'Franklin Gothic Bold', 'Arial Black', sans-serif;'>If you're seeing this...</h1>
-            <p>It probably means you don't have javascript enabled and I can't automatically redirect you to my real homepage. Please, feel free to go back, enable javascript and refresh, or simply <a href="rednetz.no-ip.biz">click here</a> to advance to my page.</p>
+	<body>
+    	<div id='INDEX'>
+        	<div id='INDEX_in'>
+            	<img id='INDEX_logo' src='_themes/core/logo.png' alt='Hexanet logo' />
+                <img id='INDEX_banner' src='_themes/core/banner.png' alt='HEXANET' />
+            </div>
         </div>
+    	<input type='button' onmouseover='tooltip.pop(this, "Tooltip testing.")' onmouseleave='tooltip.hide(this)' />
+        <iframe src="http://webchat.esper.net/?nick=user...&channels=hexanet&fg_color=FFFF00&fg_sec_color=666666&bg_color=000000&prompt=0" width="647" height="400"></iframe>
     </body>
 </html>
+
+<!-- Note section for thought clearing:
+Banner and Logo hexagons created on a 148x128 template, line weight was 12.
+
+Example of XHR system that we can use to execute PHP scripts without changing pages.
+<script type='text/javascript'>
+    function get(){
+    	var formData = new FormData();
+        formData.append("username", "eNnillaMS");
+        // formData and POST move MASSIVE text blocks easily.
+        
+        var xhr = new XMLHttpRequest();
+        var url = "test.php";
+        xhr.open("POST", url, false);
+        xhr.send(formData);
+        
+        if (xhr.status == 200) alert("SUCCESS");
+        else alert("ERROR");
+    }
+</script>
+
+-->
