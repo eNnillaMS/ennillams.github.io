@@ -12,6 +12,11 @@ html {
 }
 body {
 	margin: 0;
+	height: 100vh;
+	width: 100vw;
+	background-position: center;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
 }
 #_tooltip {
 	position: absolute;
@@ -29,16 +34,42 @@ body {
 	transition: opacity 1s, top 1s ease-in-out;
 }
 #INDEX {
-	width: 100%;
-	height: 100%;
+	width: 75%;
+	height: auto;
+	margin: 0 12.5%;
+	border: 4px ridge #FFFFFF;
+	border-radius: 10%;
+	border-top: 0;
+	border-top-left-radius: 0;
+	border-top-right-radius: 0;
 	background-image: url("core/bgpattern.png");
 }
 #INDEX_in {
 	background-color: #000;
-	border:;
-	border-radius:;
+	border: 4px ridge #777777;
+	border-radius: 10%;
+	border-top: 0;
+	border-top-left-radius: 0;
+	border-top-right-radius: 0;
+	margin: 0 2.5%;
+	padding: 10px;
 }
 #INDEX_logo {
-	width: 25%;
+	width: 33.3333%;
 	height: auto;
+	margin: 0 33.3333% 10px;
+}
+#INDEX_banner {
+	width: 100%;
+	height: auto;
+}
+#INDEX_links {
+	width: 87.5%;
+	height: auto;
+	margin: 16px 6.25%;
+	/* TEMP */
+	color: #FFF;
+	font-family: Fantasy;
+	font-size: 24px;
+	text-align: center;
 }
