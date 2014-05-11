@@ -1,0 +1,75 @@
+html {
+	/*background-image: url("_pgdat/bg.jpg");
+	background-position: center center;
+	background-color: #000;
+	background-repeat: no-repeat;
+	background-attachment: fixed;*/
+	height: 100vh;
+	width: 100vw;
+	top: 0px; bottom: 0px; left: 0px; right: 0px;
+	overflow: hidden !important;
+	-webkit-transform: translateZ(0px);
+}
+body {
+	margin: 0;
+	height: 100vh;
+	width: 100vw;
+	background-position: center;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+}
+#_tooltip {
+	position: absolute;
+	color: #F00;
+	font-family: fantasy;
+	border: 4px ridge #888;
+	border-radius: 5px;
+	background-image: url("core/bgpattern.png");
+	padding: 2px 6px;
+	opacity: 0;
+	-webkit-transition: opacity 1s, top 1s ease-in-out;
+	-moz-transition: opacity 1s, top 1s ease-in-out;
+	-o-transition: opacity 1s, top 1s ease-in-out;
+	-ms-transition: opacity 1s, top 1s ease-in-out;
+	transition: opacity 1s, top 1s ease-in-out;
+}
+#INDEX {
+	width: 75%;
+	height: auto;
+	margin: 0 12.5%;
+	border: 4px ridge #FFFFFF;
+	border-radius: 10%;
+	border-top: 0;
+	border-top-left-radius: 0;
+	border-top-right-radius: 0;
+	background-image: url("core/bgpattern.png");
+}
+#INDEX_in {
+	background-color: #000;
+	border: 4px ridge #777777;
+	border-radius: 10%;
+	border-top: 0;
+	border-top-left-radius: 0;
+	border-top-right-radius: 0;
+	margin: 0 2.5%;
+	padding: 10px;
+}
+#INDEX_logo {
+	width: 33.3333%;
+	height: auto;
+	margin: 0 33.3333% 10px;
+}
+#INDEX_banner {
+	width: 100%;
+	height: auto;
+}
+#INDEX_links {
+	width: 87.5%;
+	height: auto;
+	margin: 16px 6.25%;
+	/* TEMP */
+	color: #FFF;
+	font-family: Fantasy;
+	font-size: 24px;
+	text-align: center;
+}

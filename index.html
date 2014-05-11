@@ -2,39 +2,45 @@
 <html xmlns='http://www.w3.org/1999/xhtml'>
 	<head>
 		<meta http-equiv='Content-Type' content='text/html; charset=utf-8' />
-        <link href='core/favicon.ico' type='' rel='shortcut icon' />
-		<title>HexaNet - Homepage</title>
-        <link href='core/core.css' type='text/css' rel='stylesheet' />
-        <script src='core/core.js' type='text/javascript'></script>
+        <link href='_pgdat/favicon.ico' type='' rel='shortcut icon' />
+		<title>RedNet Home Portal</title>
+        <link href='themes/core.css' type='text/css' rel='stylesheet' />
+        <script src='script/Tooltip.js' type='text/javascript'></script>
+    	<script src='script/ToDThemes.js' type='text/javascript'></script>
 	</head>
 	<body>
-    	<div id="main">
-        	<div id="header">
-            	<div id="banner">
-                	<img id='Ilogo' src='core/logo.png' alt='Hexanet logo' />
-                	<img id='Ibanner' src='core/banner.png' alt='HEXANET' />
-                </div>
-                <div class="btn" onclick="redPages.home()">Home</div><div class="bt">&nbsp;</div>
-                <div class="btn" onclick="redPages.projects()">Projects</div><div class="bt">&nbsp;</div>
-                <div class="btn" onclick="redPages.forums()">Forums</div><div class="bt">&nbsp;</div>
-                <div class="btn" onclick="redPages.chat()">Chat</div>
+    	<div id='INDEX'>
+        	<div id='INDEX_in'>
+            	<img id='INDEX_logo' src='themes/core/logo.png' alt='Hexanet logo' />
+                <img id='INDEX_banner' src='themes/core/banner.png' alt='HEXANET' />
             </div>
-        	<div id="page"></div>
-            <div id="side">
-            	<div class="item">
-                	<h2>Sidebar Test Item</h2>
-                    <hr />
-                    <div>
-                    	WEEEEOOOOOOOOO<br />
-                    	WEEEEOOOOOOOOO<br />
-                    	WEEEEOOOOOOOOO<br />
-                    	WEEEEOOOOOOOOO
-                    </div>
-                </div>
-            </div>
-            <div id="footer">
-            	Copyright &copy; Heath "eNnillaMS" Boutilier, 2014
+            <div id='INDEX_links'>
+            	Site is under construction, please come back later when work is complete.
             </div>
         </div>
     </body>
 </html>
+
+<!-- Note section for thought clearing:
+Banner and Logo hexagons created on a 148x128 template, line weight was 12.
+
+Example of XHR system that we can use to execute PHP scripts without changing pages.
+<script type='text/javascript'>
+    function get(){
+    	var formData = new FormData();
+        formData.append("username", "eNnillaMS");
+        // formData and POST move MASSIVE text blocks easily.
+        
+        var xhr = new XMLHttpRequest();
+        var url = "test.php";
+        xhr.open("POST", url, false);
+        xhr.send(formData);
+        
+        if (xhr.status == 200) alert("SUCCESS");
+        else alert("ERROR");
+    }
+</script>
+
+		<input type='button' onmouseover='tooltip.pop(this, "Tooltip testing.")' onmouseleave='tooltip.hide(this)' />
+        <iframe src="http://webchat.esper.net/?nick=user...&channels=hexanet&fg_color=FFFF00&fg_sec_color=666666&bg_color=000000&prompt=0" width="647" height="400"></iframe>
+-->
