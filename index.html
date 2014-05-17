@@ -39,10 +39,12 @@
 			if (myIP) ip = "192.168.2.200";
 			var page = window.location.href;
 			if (page.indexOf("#") != -1){
+				if (page.indexOf("index.html") == -1) window.location.replace(page.substr(0, page.indexOf("#")) + "index.html" + page.substr(page.indexOf("#")));
 				var curr = page.substr(page.indexOf("#") + 1);
 			} else {
 				var curr = "home";
-				window.location.replace(window.location.href + "#home");
+				if (page.indexOf("index.html") == -1) window.location.replace(page.substr(0, page.indexOf("/") + 1) + "index.html");
+				window.location.replace(page + "#home");
 			}
 			document.getElementById("frame").src = "http://" + ip + ":8080/index.html#" + curr;
 			var loaded = false;
